@@ -1,0 +1,13 @@
+packages:
+  .
+
+tests: True
+
+package sse-parser
+  flags: +ci
+
+source-repository-package
+  type: git
+  location: https://github.com/flipstone/henforcer.git
+  tag: befaba9bce1fcb531e47f59901eb26a7c6a56e02
+

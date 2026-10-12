@@ -1,0 +1,94 @@
+[forAnyModule]
+allowedOpenUnaliasedImports = 1
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.ByteString"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "BS"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.ByteString.Lazy"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "LBS"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.List"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "List"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.List.NonEmpty"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "NEL"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.Text"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "T"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.Map"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Map"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.Set"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Set"
+
+[[forAnyModule.allowedQualifications]]
+module = "Data.Attoparsec.Text"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Atto"
+
+[[forAnyModule.allowedQualifications]]
+module = "Test.Tasty"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Tasty"
+
+[[forAnyModule.allowedQualifications]]
+module = "Test.Tasty.Hedgehog"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "TastyH"
+
+[[forAnyModule.allowedQualifications]]
+module = "Test.Tasty.Golden"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "TastyG"
+
+[[forAnyModule.allowedQualifications]]
+module = "Hedgehog"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "HH"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { unqualified = true }
+
+[[forAnyModule.allowedQualifications]]
+module = "Hedgehog.Gen"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Gen"
+
+[[forAnyModule.allowedQualifications]]
+module = "Hedgehog.Range"
+[[forAnyModule.allowedQualifications.importScheme]]
+qualified = { qualifiedPost = true }
+alias = "Range"
+
+# Skip henforcer rules for cabal-/hpack-generated Paths_* modules.
+[[forPatternModules]]
+pattern = "Paths_*"
+[forPatternModules.rulesToIgnore]
+all = true
